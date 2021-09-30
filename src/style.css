@@ -13,6 +13,9 @@ body {
 .navbar .navbar-brand {
   margin-right: 0;
 }
+.navbar .header-button {
+  position: relative;
+}
 .navbar .search-button {
   position: relative;
   border-radius: 100%;
@@ -24,7 +27,8 @@ body {
 .navbar .search-form {
   position: absolute;
   display: none;
-  right: 278px;
+  width: 100%;
+  right: 80%;
   margin-top: 3px;
   z-index: 99;
 }
@@ -45,6 +49,28 @@ body {
   width: 30px;
   border-radius: 50%;
   margin-left: -5px;
+}
+@media (max-width: 1200px) {
+  .navbar a {
+    padding: 8px 14px !important;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .search-button {
+    display: none;
+  }
+  .navbar .search-form {
+    position: relative;
+    display: block;
+    margin-left: 0;
+    right: 0;
+  }
+  .navbar .open-button {
+    margin: 15px 0px 10px 0px;
+  }
+  .navbar .header-button {
+    text-align: center;
+  }
 }
 
 .dropdown:hover .dropdown-menu {
@@ -87,6 +113,17 @@ body {
 #main .text .blue {
   background-color: #4398F8;
   color: #fff;
+}
+@media (max-width: 991px) {
+  #main .text {
+    text-align: center;
+  }
+  #main .text h1 {
+    font-size: 4rem;
+  }
+  #main .text p {
+    font-size: 1.1rem;
+  }
 }
 #main .home-img {
   position: relative;
